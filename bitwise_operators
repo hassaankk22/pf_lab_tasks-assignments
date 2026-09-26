@@ -1,0 +1,31 @@
+#include<stdio.h>
+int main(){
+    int role, access, flag;
+
+    printf("enter you role: \n");
+    scanf("%d", &role);
+
+    printf("enter you access code: \n");
+    scanf("%d", &access);
+
+    if(role==1)
+    printf("Hello Admin\n");
+
+    else if(role==2)
+    printf("Hello manager\n");
+
+    else if(role==3)
+    printf("Hey Staff! \n");
+
+    else
+    printf("Invalid Input");
+
+    if(access & 1)
+    printf("Entry to Building\n");
+
+    if(access & 2)
+    printf("Entry to lab\n");
+
+    if(access & 4)
+    printf("Entry to Server room");
+}
