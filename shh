@@ -1,0 +1,118 @@
+#include <stdio.h>
+int main()
+{
+
+	// ------------------------Initialization of Pointers---------------------------
+	int a, b;
+	a = 5;
+	b = 3;
+
+	int *first = &b;
+	int *second = &a;
+
+	// -------------------Printing Address---------------------------
+	// printf("Address of first Pointer: %p\n" , a);
+	// printf("Address of Second Pointer: %p\n" , &b);
+	// printf("Value of 1st Pointer: %d\n" , *first);
+	// printf("Value of 2nd Pointer: %d\n" , *second);
+
+	*first = 80;
+	*second = 60;
+
+	// ----------------------Changing Values---------------------------------
+
+	printf("New Value of First Pointer is :%d\n", *first);
+	printf("New Value of Second Pointer is :%d\n", *second);
+
+	// ------------------Sum & Product----------------------------------
+
+	// int sum = *first + *second;
+	// int pro = *first * *second;
+	// int *sump = &sum;
+	// int *prop = &pro;
+
+	// printf("Sum Of Both Numbers is: %d\n" , *sump);
+
+	// printf("Product Of Both Numbers is: %d\n\n" , *prop);
+
+	// ------------------------Working On Arrays-------------------------
+
+	// printf("Now Working On Arrays\n");
+
+	// int array1[4] = {2,5,7,3};
+	// int *arrayp = array1;
+
+	// printf("Array Values: \n");
+	// for(int i = 0; i<4 ; i++){
+	// 	printf("%d\n" , *(arrayp+i));
+	// }
+
+	//--------------------Greater Number-------------------------
+
+	// if(*first > *second){
+	// 	printf("Greater Num is: %d" , *first);
+	// }
+	// else
+	// printf("Greater Num is : %d" , *second);
+
+	// --------------------Swapping Number-----------------------------
+
+	// int temp  = *second;
+	// *second = *first;
+	// *first = temp;
+
+	// printf("After Swapping: \nFirst Number: %d\nSecond Number:%d" , *first,*second);
+
+	// -------------------------Sum Of Arrays-------------------------------------\
+
+
+	// int array1[4] = {2,5,7,3};
+	// int *arrayp = array1;
+	// int count = 0;
+	// for(int i = 0; i<4 ; i++){
+	// 	count = count + *(arrayp+i);
+	// }
+
+	// printf("Sum of Array is : %d\n" , count);
+
+	// ------------------Findind Largest In Arrays---------------------------------
+
+	// int array1[4] = {2,5,7,3};
+	// int *arrayp = array1;
+
+	// int largest = *arrayp;
+
+	// for(int i = 0; i<4 ; i++){
+	// 	if(*(arrayp + i) > largest){
+	// 		largest = *(arrayp + i);
+	// 	}
+	// }
+	// printf("Largest Number is: %d\n" , largest);
+
+	// -------------------------Counting Even And Odd--------------------------------------
+
+	// int array1[4] = {2, 5, 7, 3};
+	// int *arrayp = array1;
+
+	// int even = 0;
+	// int odd = 0;
+
+	// for (int i = 0; i < 4; i++)
+	// {
+	// 	if (*(arrayp + i) % 2 == 0)
+	// 		even++;
+	// 	else
+	// 		odd++;
+	// }
+
+	// printf("Even Numbers: %d\nOdd Numbers: %d\n", even, odd);
+
+	// ----------------Reversing Array------------------------
+
+	int array1[4] = {2, 5, 7, 3};
+	int *arrayp = array1;
+	printf("Reversed Arrays: \n");
+	for(int  i = 3 ; i>=0; i--){
+		printf("%-2d" , *(arrayp + i));
+	}
+}
